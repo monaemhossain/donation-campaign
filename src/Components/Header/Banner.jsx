@@ -7,7 +7,7 @@ const Banner = () => {
                 
                 <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">I Grow By Helping People In Need</h1>
                 
-                <form className="w-full max-w-md mx-auto space-y-16">
+                <form className="w-full max-w-md mx-auto md:space-y-16 space-y-10">
                     <label htmlFor="default-email" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"></label>
                     <div className="relative">
                         
