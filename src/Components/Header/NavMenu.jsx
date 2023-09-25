@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const NavMenu = () => {
     return (
 
-        <nav className="bg-transparent w-full fixed py-5 z-10">
+        <nav className="bg-transparent w-full absolute py-5 z-10">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <NavLink to='/' className="flex items-center">
                     <img src="/images/Logo.png" alt="Donation Campaign Logo" />
@@ -24,7 +24,7 @@ const NavMenu = () => {
                             <NavLink
                                 to="/"
                                 className={({ isActive, isPending }) =>
-                                    isPending ? "text-gray-400" : isActive ? "text-red-600" : ""
+                                    isPending ? "text-gray-400" : isActive ? "text-red-600 underline" : ""
                                 }
                             >
                                 Home
@@ -34,7 +34,7 @@ const NavMenu = () => {
                             <NavLink
                                 to="/donation"
                                 className={({ isActive, isPending }) =>
-                                    isPending ? "text-gray-400" : isActive ? "text-red-600" : ""
+                                    isPending ? "text-gray-400" : isActive ? "text-red-600 underline" : ""
                                 }
                             >
                                 Donation
@@ -44,7 +44,7 @@ const NavMenu = () => {
                             <NavLink
                                 to="/statistics"
                                 className={({ isActive, isPending }) =>
-                                    isPending ? "text-gray-400" : isActive ? "text-red-600" : ""
+                                    isPending ? "text-gray-400" : isActive ? "text-red-600 underline" : ""
                                 }
                             >
                                 Statistics
