@@ -1,8 +1,9 @@
 [
     {
         "id": "1",
-        "picture": "image7.jpg",
+        "picture": "/images/",
         "thumbnail": "https://i.postimg.cc/RFYmWPmg/Education.png",
+        "thumbnail_small": "https://i.postimg.cc/3RVQkZk1/Small-Education.png",
         "title": "Educational Opportunities",
         "category": "education",
         "category_bg_color": "#d4ecc2",
@@ -10,12 +11,13 @@
         "text_button_bg_color": "#8e44ad",
         "text_color": "#79c23f",
         "description": "Help us empower the next generation through education initiatives. Your support will provide valuable learning opportunities for disadvantaged students. Together, we can nurture future leaders and change-makers.",
-        "price": "$330.00"
+        "price": "$330"
     },
     {
         "id": "2",
         "picture": "image5.jpg",
         "thumbnail": "https://i.postimg.cc/ThMX9ppm/Health.png",
+        "thumbnail_small": "https://i.postimg.cc/NG2wWZnz/Small-Health.png",
         "title": "Medical Research Support",
         "category": "health",
         "category_bg_color": "#92cbf5",
@@ -23,12 +25,13 @@
         "text_button_bg_color": "#2980b9",
         "text_color": "#0052ff",
         "description": "Join our health campaign to support vital medical research and advancements. Your contribution will drive progress in healthcare and improve lives. Together, we can make breakthroughs in medical science.",
-        "price": "$400.00"
+        "price": "$400"
     },
     {
         "id": "3",
         "picture": "image2.jpg",
         "thumbnail": "https://i.postimg.cc/3NDTmgJY/Food.png",
+        "thumbnail_small": "https://i.postimg.cc/hvmWT7xB/Small-Food.png",
         "title": "Nutrition Support",
         "category": "food",
         "category_bg_color": "#ffc4c5",
@@ -36,12 +39,13 @@
         "text_button_bg_color": "#27ae60",
         "text_color": "#ff444a",
         "description": "Support our campaign to provide nutritious meals for those struggling with food insecurity. Your generosity will ensure that no one goes to bed hungry. Together, we can make a difference in the lives of many.",
-        "price": "$250.00"
+        "price": "$250"
     },
     {
         "id": "4",
         "picture": "image1.jpg",
         "thumbnail": "https://i.postimg.cc/ThMX9ppm/Health.png",
+        "thumbnail_small": "https://i.postimg.cc/NG2wWZnz/Small-Health.png",
         "title": "Healthcare for All",
         "category": "health",
         "category_bg_color": "#92cbf5",
@@ -49,12 +53,13 @@
         "text_button_bg_color": "#2980b9",
         "text_color": "#0052ff",
         "description": "Help us raise funds for health-related initiatives and ensure quality healthcare for everyone. Your contribution will make a significant impact on the lives of those in need. Together, we can create a healthier and happier community.",
-        "price": "$350.00"
+        "price": "$350"
     },
     {
         "id": "5",
         "picture": "image4.jpg",
         "thumbnail": "https://i.postimg.cc/bv3phyBc/Clothing.png",
+        "thumbnail_small": "https://i.postimg.cc/RFNzCYZq/Small-Clothing.png",
         "title": "Warmth for Winter",
         "category": "clothing",
         "category_bg_color": "#fdd2c4",
@@ -62,12 +67,13 @@
         "text_button_bg_color": "#2980b9",
         "text_color": "#f87147",
         "description": "Help us provide warm clothing to those in need during the harsh winter months. Your kindness will bring comfort and protection to vulnerable individuals. Together, we can ensure that no one faces the cold alone.",
-        "price": "$280.00"
+        "price": "$280"
     },
     {
         "id": "6",
         "picture": "image3.jpg",
         "thumbnail": "https://i.postimg.cc/RFYmWPmg/Education.png",
+        "thumbnail_small": "https://i.postimg.cc/3RVQkZk1/Small-Education.png",
         "title": "Education Empowerment",
         "category": "education",
         "category_bg_color": "#d4ecc2",
@@ -75,12 +81,13 @@
         "text_button_bg_color": "#8e44ad",
         "text_color": "#79c23f",
         "description": "Contribute to our education-focused campaign for underprivileged children. Your support will provide access to quality education and empower them to build a brighter future. Together, we can break the cycle of poverty through education.",
-        "price": "$300.00"
+        "price": "$300"
     },
     {
         "id": "7",
         "picture": "image10.jpg",
         "thumbnail": "https://i.postimg.cc/3NDTmgJY/Food.png",
+        "thumbnail_small": "https://i.postimg.cc/hvmWT7xB/Small-Food.png",
         "title": "Nutritious Meals for Children",
         "category": "food",
         "category_bg_color": "#ffc4c5",
@@ -88,12 +95,13 @@
         "text_button_bg_color": "#27ae60",
         "text_color": "#ff444a",
         "description": "Help us provide nutritious meals for children in impoverished areas. Your support will ensure they grow up healthy and strong. Together, we can give them a brighter future.",
-        "price": "$360.00"
+        "price": "$360"
     },
     {
         "id": "8",
         "picture": "image9.jpg",
         "thumbnail": "https://i.postimg.cc/ThMX9ppm/Health.png",
+        "thumbnail_small": "https://i.postimg.cc/NG2wWZnz/Small-Health.png",
         "title": "Accessible Healthcare",
         "category": "health",
         "category_bg_color": "#92cbf5",
@@ -101,12 +109,13 @@
         "text_button_bg_color": "#2980b9",
         "text_color": "#0052ff",
         "description": "Support our health campaign to improve access to quality healthcare for all. Your contribution will make a significant difference in the lives of many. Together, we can build a healthier and more inclusive community.",
-        "price": "$450.00"
+        "price": "$450"
     },
     {
         "id": "9",
         "picture": "image6.jpg",
         "thumbnail": "https://i.postimg.cc/3NDTmgJY/Food.png",
+        "thumbnail_small": "https://i.postimg.cc/hvmWT7xB/Small-Food.png",
         "title": "Meals for the Hungry",
         "category": "food",
         "category_bg_color": "#ffc4c5",
@@ -114,12 +123,13 @@
         "text_button_bg_color": "#27ae60",
         "text_color": "#ff444a",
         "description": "Support our campaign to provide nourishing meals for the homeless and hungry. Your compassion will bring hope and sustenance to those in desperate need. Together, we can fight hunger and restore dignity.",
-        "price": "$310.00"
+        "price": "$310"
     },
     {
         "id": "10",
         "picture": "image8.jpg",
         "thumbnail": "https://i.postimg.cc/bv3phyBc/Clothing.png",
+        "thumbnail_small": "https://i.postimg.cc/RFNzCYZq/Small-Clothing.png",
         "title": "Warm Clothing Drive",
         "category": "clothing",
         "category_bg_color": "#fdd2c4",
@@ -127,12 +137,13 @@
         "text_button_bg_color": "#2980b9",
         "text_color": "#f87147",
         "description": "Join our campaign to provide warm clothing for those in need. Your generosity will bring comfort and warmth to families during the winter season. Together, we can make a positive impact on their lives.",
-        "price": "$320.00"
+        "price": "$320"
     },
     {
         "id": "11",
         "picture": "image11.jpg",
         "thumbnail": "https://i.postimg.cc/RFYmWPmg/Education.png",
+        "thumbnail_small": "https://i.postimg.cc/3RVQkZk1/Small-Education.png",
         "title": "Empowering Students",
         "category": "education",
         "category_bg_color": "#d4ecc2",
@@ -140,12 +151,13 @@
         "text_button_bg_color": "#8e44ad",
         "text_color": "#79c23f",
         "description": "Support our education campaign for disadvantaged students. Your contribution will provide them with the tools and opportunities they need to succeed. Together, we can break barriers and empower future leaders.",
-        "price": "$410.00"
+        "price": "$410"
     },
     {
         "id": "12",
         "picture": "image12.jpg",
         "thumbnail": "https://i.postimg.cc/bv3phyBc/Clothing.png",
+        "thumbnail_small": "https://i.postimg.cc/RFNzCYZq/Small-Clothing.png",
         "title": "Clothing for Families",
         "category": "clothing",
         "category_bg_color": "#fdd2c4",
@@ -153,6 +165,6 @@
         "text_button_bg_color": "#2980b9",
         "text_color": "#f87147",
         "description": "Help us provide clothing to families in need. Your kindness will bring warmth and comfort to those facing difficult times. Together, we can make a positive impact on their lives.",
-        "price": "$380.00"
+        "price": "$380"
     }
 ]

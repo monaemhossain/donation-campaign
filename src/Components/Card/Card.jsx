@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
+import DonationDetails from '../../Pages/Donation/DonationDetails';
 
-const Card = ({ data }) => {
+const Card = ({ data, clickToNavigate }) => {
     const { thumbnail, title, category, category_bg_color, card_bg_color, text_color } = data;
  
     const cardBackground = {
@@ -9,17 +10,16 @@ const Card = ({ data }) => {
     }
     const categoryBg = {
         backgroundColor: category_bg_color,
-        color: text_color,
     }
 
     return (
 
-        <div className="rounded-lg" style={cardBackground}>
-            <a href="#">
+        <div className="rounded-lg cursor-pointer" style={cardBackground} onClick={() => clickToNavigate(data)}>
+            <div>
                 <img className="rounded-t-lg w-full" src={thumbnail} alt={`${title} Logo`} />
-            </a>
-            <div className="p-3">
-                <span className="text-sm font-medium mr-2 px-2.5 py-0.5 rounded-md" style={categoryBg}>{category}</span>
+            </div>
+            <div className="p-3 pt-5 space-y-2">
+                <p className="max-w-fit text-sm font-medium mr-2 px-2.5 py-0.5 rounded-md" style={categoryBg}>{category}</p>
                 <h5 className='text-xl font-semibold'>{title}</h5>
             </div>
         </div>
@@ -27,6 +27,7 @@ const Card = ({ data }) => {
     );
 };
 Card.propTypes = {
-    data: PropTypes.object,
+    data: PropTypes.object.isRequired,
+    clickToNavigate: PropTypes.func.isRequired,
 }
 export default Card;
