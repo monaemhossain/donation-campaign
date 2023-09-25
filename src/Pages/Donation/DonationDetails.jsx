@@ -11,17 +11,17 @@ const DonationDetails = () => {
 
 
     return (
-        <div className="max-w-screen-xl mx-auto px-6 xl:px-0 pt-36">
+        <div className="max-w-screen-xl mx-auto px-6 xl:px-0 pt-36 pb-24">
             <div className="relative w-full">
-                <img src={thumbnail} alt="" className="w-full"/>
-                <div className="absolute bottom-0 w-full bg-gray-700 opacity-50 bg-blend-color">
-                    <button className="py-4 px-6 rounded-lg" style={btnBg}>Donate {price}</button>
-                </div>
+                <img src={thumbnail} alt="" className="w-full" />
+                <div className="absolute bottom-0 w-full bg-gray-700 md:p-12 p-10 opacity-50"></div>
+                <button className="py-4 px-6 rounded-lg absolute bottom-0 md:m-5 m-3" style={btnBg}>Donate {price}</button>
             </div>
 
-            <h1>{title}</h1>
-
-            <p>{description}</p>
+            <div className="pt-14">
+                <h1 className="text-4xl font-bold pb-6">{title}</h1>
+                <p className="text-gray-600">{description}</p>
+            </div>
         </div>
     );
 };
