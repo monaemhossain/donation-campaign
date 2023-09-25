@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import DonationDetails from '../../Pages/Donation/DonationDetails';
+
 
 const Card = ({ data, clickToNavigate }) => {
     const { thumbnail, title, category, category_bg_color, card_bg_color, text_color } = data;
