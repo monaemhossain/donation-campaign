@@ -13,7 +13,7 @@ const Home = () => {
         navigate('/donation-details', { state: { data } })
     }
 
-    console.log(donateData.length);
+    // console.log(donateData.length);
 
     const filteredData = donateData.filter(data =>
         searchCategory === "" || data.category.toLowerCase() === searchCategory.toLowerCase()

@@ -4,7 +4,7 @@ import { getLocalStoredData } from "../../Components/LocalStorage";
 
 const Donation = () => {
     const localStorageData = getLocalStoredData();
-    console.log(localStorageData);
+    // console.log(localStorageData);
     // const donatedData = useLoaderData();
     // console.log(donatedData);
     return (

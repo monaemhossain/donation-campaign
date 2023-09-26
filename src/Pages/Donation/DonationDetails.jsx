@@ -26,9 +26,12 @@ const DonationDetails = () => {
                 <h1 className="text-4xl font-bold pb-6">{title}</h1>
                 <p className="text-gray-600">{description}</p>
             </div>
-            <div className="flex justify-center mt-6">
+            <div className="flex justify-center mt-6 gap-6">
                 <button  className="py-4 px-6 bg-red-400 text-white font-bold rounded-lg">
-                    <Link to='/'>👈 Back to home</Link>
+                    <Link to='/'>Back to home</Link>
+                </button>
+                <button  className="py-4 px-6 bg-red-400 text-white font-bold rounded-lg">
+                    <Link to='/'>Donations</Link>
                 </button>
             </div>
         </div>
