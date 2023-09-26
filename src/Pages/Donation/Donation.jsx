@@ -9,25 +9,33 @@ const Donation = () => {
     const cardToShow = showAll ? localStorageData.length : 4
     console.log(cardToShow);
 
+    console.log(cardToShow);
 
     const handleShowAll = (e) => {
         setShowAll(localStorageData.length)
-        e.target.classList.toggle('hidden')
+        e.target.classList.add('hidden')
     }
 
-    // console.log(localStorageData);
-    // const donatedData = useLoaderData();
-    // console.log(donatedData);
     return (
         <div className="max-w-screen-xl mx-auto px-6 xl:px-0 pt-36 pb-24">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {
-                    localStorageData?.slice(0, cardToShow).map(donated => <LargeCard key={donated.id} donated={donated}></LargeCard>)
+                    localStorageData.length === 0 ? (
+                        <div className="col-span-2 grid items-center">
+                            <h1 className="text-center text-4xl font-bold text-slate-500">You Haven&apos;t donated yet!!</h1>
+                        </div>
+                    ): (
+                        localStorageData?.slice(0, cardToShow).map(donated => <LargeCard key={donated.id} donated={donated}></LargeCard>)
+                )
                 }
             </div>
-            <div className="grid items-center justify-center">
-                <button onClick={handleShowAll} className="mt-20 py-4 px-6 bg-red-400 text-white font-bold rounded-lg">Show All</button>
-            </div>
+            {
+                localStorageData.length > 4 ? (
+                    <div className="grid items-center justify-center">
+                        <button onClick={handleShowAll} className="mt-20 py-4 px-6 bg-red-400 text-white font-bold rounded-lg">Show All</button>
+                    </div>
+                ) : ("")
+            }
         </div>
     );
 };
