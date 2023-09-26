@@ -1,5 +1,7 @@
 import { useLocation } from "react-router-dom";
-
+import { Link } from "react-router-dom";
+import swal from "sweetalert";
+import { saveToLocalStorage } from "../../Components/localstorage";
 const DonationDetails = () => {
     const location = useLocation();
     const data = location.state?.data
@@ -9,18 +11,27 @@ const DonationDetails = () => {
         color: "#ffffff",
     }
 
+    const handleAddToDonation = () => {
+        saveToLocalStorage(data)
+        swal('added to donation')
+    }
 
     return (
         <div className="max-w-screen-xl mx-auto px-6 xl:px-0 pt-36 pb-24">
             <div className="relative w-full">
                 <img src={thumbnail} alt="" className="w-full" />
                 <div className="absolute bottom-0 w-full bg-gray-700 md:p-12 p-10 opacity-50"></div>
-                <button className="py-4 px-6 rounded-lg absolute bottom-0 md:m-5 m-3" style={btnBg}>Donate {price}</button>
+                <button onClick={handleAddToDonation} className="py-4 px-6 rounded-lg absolute bottom-0 md:m-5 m-3" style={btnBg}>Donate {price}</button>
             </div>
 
             <div className="pt-14">
                 <h1 className="text-4xl font-bold pb-6">{title}</h1>
                 <p className="text-gray-600">{description}</p>
+            </div>
+            <div className="flex justify-center mt-6">
+                <button  className="py-4 px-6 bg-red-400 text-white font-bold rounded-lg">
+                    <Link to='/'>👈 Back to home</Link>
+                </button>
             </div>
         </div>
     );

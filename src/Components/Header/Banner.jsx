@@ -2,10 +2,7 @@ import PropTypes from 'prop-types'
 import { useRef } from 'react';
 
 const Banner = ({ setSearchCategory }) => {
-    // const [inputText, setInputText] = useState("");
-
     const inputRef = useRef(null);
-    
     
     const handleSearchInput = (e) => {
         e.preventDefault();
@@ -27,7 +24,7 @@ const Banner = ({ setSearchCategory }) => {
 
                         <input
                             ref={inputRef}
-                            type="text" id="input-text" className="block w-full p-4 text-sm text-gray-900 border border-gray-300 rounded-xl bg-white focus:ring-red-300 focus:border-red-300" placeholder="Search here...." />
+                            type="text" id="search-text" className="block w-full p-4 text-sm text-gray-900 border border-gray-300 rounded-xl bg-white focus:ring-red-300 focus:border-red-300" placeholder="Search here...." />
                         <button onClick={handleSearchInput} type="submit" className="text-white absolute right-0 bottom-0 bg-red-500 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-red-100 font-medium rounded-e-xl text-sm h-full px-5">Search</button>
                     </div>
                 </form>

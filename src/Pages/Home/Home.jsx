@@ -6,7 +6,9 @@ import { useState } from "react";
 const Home = () => {
     const donateData = useLoaderData();
     const navigate = useNavigate();
+
     const [searchCategory, setSearchCategory] = useState("")
+    
     const navigateToDonationDetails = (data) => {
         navigate('/donation-details', { state: { data } })
     }

@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import { useNavigate } from 'react-router-dom';
 const LargeCard = ({ donated }) => {
     const { thumbnail_small, title, category, category_bg_color, card_bg_color, text_color, price } = donated;
     const cardBackground = {
@@ -12,6 +13,10 @@ const LargeCard = ({ donated }) => {
         backgroundColor: text_color,
         color: "#ffffff",
     }
+    const navigate = useNavigate()
+    const navigateToDonationDetails = (data) => {
+        navigate('/donation-details', { state: { data } })
+    }
     return (
         <div>
             <div className="flex flex-row gap-6 items-center rounded-lg" style={cardBackground}>
@@ -22,7 +27,7 @@ const LargeCard = ({ donated }) => {
                     <p className="max-w-fit text-sm font-normal mr-2 px-2.5 py-0.5 rounded-md" style={categoryBg}>{category}</p>
                     <h5 className='text-2xl font-semibold'>{title}</h5>
                     <p className='text-base font-semibold'>{price}</p>
-                    <button className='rounded-lg px-4 py-2 text-lg font-semibold' style={btnBg}>View Details</button>
+                    <button onClick={() => navigateToDonationDetails(donated)} className='rounded-lg px-4 py-2 text-lg font-semibold' style={btnBg}>View Details</button>
                 </div>
             </div>
         </div>
