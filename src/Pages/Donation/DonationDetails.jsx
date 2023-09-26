@@ -1,16 +1,20 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { saveToLocalStorage } from "../../Components/LocalStorage";
 const DonationDetails = () => {
     const location = useLocation();
     const data = location.state?.data
-    
+
     const { thumbnail, title, description, text_color, price } = data;
     const btnBg = {
         backgroundColor: text_color,
         color: "#ffffff",
     }
 
+    const navigate = useNavigate()
+    const handleNavigatePage = page => {
+        navigate(page)
+    }
     const handleAddToDonation = () => {
         saveToLocalStorage(data)
     }
@@ -28,11 +32,11 @@ const DonationDetails = () => {
                 <p className="text-gray-600">{description}</p>
             </div>
             <div className="flex justify-center mt-6 gap-6">
-                <button  className="py-4 px-6 bg-red-400 text-white font-bold rounded-lg">
+                <button onClick={() => handleNavigatePage('/')} className="py-4 px-6 bg-red-400 text-white font-bold rounded-lg">
                     <Link to='/'>Back to home</Link>
                 </button>
-                <button  className="py-4 px-6 bg-red-400 text-white font-bold rounded-lg">
-                    <Link to='/'>Donations</Link>
+                <button onClick={() => handleNavigatePage('/donation')} className="py-4 px-6 bg-red-400 text-white font-bold rounded-lg">
+                    Donations
                 </button>
             </div>
         </div>
