@@ -1,7 +1,6 @@
 [
     {
         "id": "1",
-        "picture": "/images/",
         "picture": "https://i.postimg.cc/jSbfnmDZ/education1.jpg",
         "title": "Educational Opportunities",
         "category": "education",
@@ -14,7 +13,6 @@
     },
     {
         "id": "2",
-        "picture": "image5.jpg",
         "picture": "https://i.postimg.cc/q7YB6Fvh/Health.jpg",
         "title": "Medical Research Support",
         "category": "health",
@@ -27,7 +25,6 @@
     },
     {
         "id": "3",
-        "picture": "image2.jpg",
         "picture": "https://i.postimg.cc/fW1mDJD4/food1.jpg",
         "title": "Nutrition Support",
         "category": "food",
@@ -40,7 +37,6 @@
     },
     {
         "id": "4",
-        "picture": "image1.jpg",
         "picture": "https://i.postimg.cc/rz68bBBb/health1.jpg",
         "title": "Healthcare for All",
         "category": "health",
@@ -53,7 +49,6 @@
     },
     {
         "id": "5",
-        "picture": "image4.jpg",
         "picture": "https://i.postimg.cc/zXSf2p06/Clothing.jpg",
         "title": "Warmth for Winter",
         "category": "clothing",
@@ -66,7 +61,6 @@
     },
     {
         "id": "6",
-        "picture": "image3.jpg",
         "picture": "https://i.postimg.cc/DwPXr6sF/education3.jpg",
         "title": "Education Empowerment",
         "category": "education",
@@ -79,7 +73,6 @@
     },
     {
         "id": "7",
-        "picture": "image10.jpg",
         "picture": "https://i.postimg.cc/x8Nf6f4M/food2.jpg",
         "title": "Nutritious Meals for Children",
         "category": "food",
@@ -92,7 +85,6 @@
     },
     {
         "id": "8",
-        "picture": "image9.jpg",
         "picture": "https://i.postimg.cc/vH99BbZ4/health2.jpg",
         "title": "Accessible Healthcare",
         "category": "health",
@@ -105,7 +97,6 @@
     },
     {
         "id": "9",
-        "picture": "image6.jpg",
         "picture": "https://i.postimg.cc/6QT53Ktx/Food.jpg",
         "title": "Meals for the Hungry",
         "category": "food",
@@ -118,7 +109,6 @@
     },
     {
         "id": "10",
-        "picture": "image8.jpg",
         "picture": "https://i.postimg.cc/59XLhwcq/clothing2.jpg",
         "title": "Warm Clothing Drive",
         "category": "clothing",
@@ -131,7 +121,6 @@
     },
     {
         "id": "11",
-        "picture": "image11.jpg",
         "picture": "https://i.postimg.cc/rs28QtWq/Education.png",
         "title": "Empowering Students",
         "category": "education",
@@ -144,7 +133,6 @@
     },
     {
         "id": "12",
-        "picture": "image12.jpg",
         "picture": " https://i.postimg.cc/1tjR0nJy/clothing1.jpg",
         "title": "Clothing for Families",
         "category": "clothing",

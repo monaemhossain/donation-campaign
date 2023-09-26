@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import { useNavigate } from 'react-router-dom';
 const LargeCard = ({ donated }) => {
-    const { thumbnail, title, category, category_bg_color, card_bg_color, text_color, price } = donated;
+    const { picture, title, category, category_bg_color, card_bg_color, text_color, price } = donated;
     const cardBackground = {
         backgroundColor: card_bg_color,
         color: text_color,
@@ -21,7 +21,7 @@ const LargeCard = ({ donated }) => {
         <div>
             <div className="sm:flex flex-row gap-6 items-center rounded-lg" style={cardBackground}>
                 <div className='w-full sm:w-52 h-48 max-sm:h-60'>
-                    <img className="object-cover rounded-t-lg h-full w-full md:rounded-none md:rounded-l-lg" src={thumbnail} alt={`${title} thumbnail`} />
+                    <img className="object-cover rounded-t-lg h-full w-full md:rounded-none md:rounded-l-lg" src={picture} alt={`${title} picture`} />
                 </div>
                 <div className="space-y-2 md:p-0 p-4">
                     <p className="max-w-fit text-sm font-normal mr-2 px-2.5 py-0.5 rounded-md" style={categoryBg}>{category}</p>

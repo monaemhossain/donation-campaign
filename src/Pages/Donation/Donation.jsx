@@ -29,7 +29,7 @@ const Donation = () => {
             {
                 localStorageData.length > 4 ? (
                     <div className="grid items-center justify-center">
-                        <button onClick={handleShowAll} className="mt-20 py-4 px-6 bg-red-400 text-white font-bold rounded-lg">Show All</button>
+                        <button onClick={handleShowAll} className="mt-16 py-3 px-6 bg-[#009444] text-white font-bold rounded-lg">See All</button>
                     </div>
                 ) : ("")
             }

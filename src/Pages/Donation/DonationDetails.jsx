@@ -5,7 +5,7 @@ const DonationDetails = () => {
     const location = useLocation();
     const data = location.state?.data
 
-    const { thumbnail, title, description, text_color, price } = data;
+    const { picture, title, description, text_color, price } = data;
     const btnBg = {
         backgroundColor: text_color,
         color: "#ffffff",
@@ -22,7 +22,7 @@ const DonationDetails = () => {
     return (
         <div className="max-w-screen-xl mx-auto px-6 xl:px-0 pt-36 pb-24">
             <div className="relative w-full">
-                <img src={thumbnail} alt="" className="w-full" />
+                <img src={picture} alt="" className="w-full" />
                 <div className="absolute bottom-0 w-full bg-gray-700 md:p-12 p-10 opacity-50"></div>
                 <button onClick={handleAddToDonation} className="py-4 px-6 rounded-lg absolute bottom-0 md:m-5 m-3" style={btnBg}>Donate {price}</button>
             </div>
