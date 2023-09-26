@@ -1,15 +1,12 @@
 import { useState } from "react";
 import LargeCard from "../../Components/Card/LargeCard";
-import { getLocalStoredData } from "../../Components/LocalStorage";
+import { getLocalStoredData } from "../../Components/LocalStorage/LocalStorage";
 
 const Donation = () => {
     const localStorageData = getLocalStoredData();
     const [showAll, setShowAll] = useState(0);
 
     const cardToShow = showAll ? localStorageData.length : 4
-    console.log(cardToShow);
-
-    console.log(cardToShow);
 
     const handleShowAll = (e) => {
         setShowAll(localStorageData.length)
@@ -22,7 +19,7 @@ const Donation = () => {
                 {
                     localStorageData.length === 0 ? (
                         <div className="col-span-2 grid items-center">
-                            <h1 className="text-center text-4xl font-bold text-slate-500">You Haven&apos;t donated yet!!</h1>
+                            <h1 className="text-center text-4xl font-bold text-slate-500">You Haven&apos;t Made Any Donation Yet.</h1>
                         </div>
                     ): (
                         localStorageData?.slice(0, cardToShow).map(donated => <LargeCard key={donated.id} donated={donated}></LargeCard>)

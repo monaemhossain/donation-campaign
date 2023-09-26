@@ -1,6 +1,6 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { saveToLocalStorage } from "../../Components/LocalStorage";
+import { saveToLocalStorage } from "../../Components/LocalStorage/LocalStorage";
 const DonationDetails = () => {
     const location = useLocation();
     const data = location.state?.data

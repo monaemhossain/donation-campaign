@@ -1,5 +1,5 @@
 import { PieChart, Pie, Cell, Legend } from 'recharts';
-import { getLocalStoredData } from '../../Components/LocalStorage';
+import { getLocalStoredData } from '../../Components/LocalStorage/LocalStorage';
 import { useLoaderData } from 'react-router';
 
 const Statistics = () => {
@@ -7,8 +7,6 @@ const Statistics = () => {
     const localData = getLocalStoredData().length;
 
     const data2 = apiAllData - localData
-
-    console.log(apiAllData);
 
     const data = [
         { name: 'Your Donation', value: localData },
