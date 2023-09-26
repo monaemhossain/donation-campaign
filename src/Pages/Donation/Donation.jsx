@@ -1,6 +1,6 @@
 // import { useLoaderData } from "react-router-dom";
 import LargeCard from "../../Components/Card/LargeCard";
-import { getLocalStoredData } from "../../Components/localstorage";
+import { getLocalStoredData } from "../../Components/LocalStorage";
 
 const Donation = () => {
     const localStorageData = getLocalStoredData();

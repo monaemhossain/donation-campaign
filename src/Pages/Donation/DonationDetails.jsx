@@ -1,7 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
-import swal from "sweetalert";
-import { saveToLocalStorage } from "../../Components/localstorage";
+import { saveToLocalStorage } from "../../Components/LocalStorage";
 const DonationDetails = () => {
     const location = useLocation();
     const data = location.state?.data
@@ -13,7 +12,6 @@ const DonationDetails = () => {
 
     const handleAddToDonation = () => {
         saveToLocalStorage(data)
-        swal('added to donation')
     }
 
     return (

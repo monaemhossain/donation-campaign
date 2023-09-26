@@ -1,9 +1,13 @@
+import swal from "sweetalert";
+
 const getLocalStoredData = () => {
     const storedDonationData = localStorage.getItem('donations');
     if(storedDonationData){
         return JSON.parse(storedDonationData);
     }
-    return [];
+    else{
+        return[]
+    }
 }
 
 const saveToLocalStorage = (data) => {
@@ -12,6 +16,17 @@ const saveToLocalStorage = (data) => {
     if(!exists){
         storedLocalData.push(data)
         localStorage.setItem('donations', JSON.stringify(storedLocalData))
+        swal({
+            title: "Donation Success",
+            text: "Thanks!! You have donated successfully. Keep up the good work",
+            icon: "success"
+
+        })
+    }else{
+        swal({
+            text: "You have already donated in this category, Please donate in other categories to help more people",
+            icon: "error"
+        })
     }
 }
 
