@@ -4,6 +4,7 @@ import { saveToLocalStorage } from "../../Components/LocalStorage";
 const DonationDetails = () => {
     const location = useLocation();
     const data = location.state?.data
+    
     const { thumbnail, title, description, text_color, price } = data;
     const btnBg = {
         backgroundColor: text_color,
